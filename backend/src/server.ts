@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use(rateLimiter);
 app.use(timeoutMiddleware);
-app.use("/api/transaction", transactionRoutes);
+app.use("/api/transactions", transactionRoutes);
 
 // app.get("/", (req: Request, res: Response) => {
 //   res.send("Ki je kore amar server ta");
